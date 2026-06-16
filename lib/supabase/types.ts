@@ -98,51 +98,51 @@ export interface Database {
         Relationships: [];
       };
 
-      philosophers: {
-        Row: {
-          id: string;
-          name: string;
-          birth_death: string | null;
-          school_tradition: string | null;
-          bio_summary: string | null;
-          key_ideas: string[] | null;
-          public_domain_works: string | null;
-          status: 'historical' | 'contemporary' | 'obscure';
-          wikipedia_slug: string | null;
-          sep_link: string | null;
-          era: string | null;
-          created_at: string;
-        };
-        Insert: {
-          id?: string;
-          name: string;
-          birth_death?: string | null;
-          school_tradition?: string | null;
-          bio_summary?: string | null;
-          key_ideas?: string[] | null;
-          public_domain_works?: string | null;
-          status?: 'historical' | 'contemporary' | 'obscure';
-          wikipedia_slug?: string | null;
-          sep_link?: string | null;
-          era?: string | null;
-          created_at?: string;
-        };
-        Update: {
-          id?: string;
-          name?: string;
-          birth_death?: string | null;
-          school_tradition?: string | null;
-          bio_summary?: string | null;
-          key_ideas?: string[] | null;
-          public_domain_works?: string | null;
-          status?: 'historical' | 'contemporary' | 'obscure';
-          wikipedia_slug?: string | null;
-          sep_link?: string | null;
-          era?: string | null;
-          created_at?: string;
-        };
-        Relationships: [];
-      };
+      // philosophers: {
+      //   Row: {
+      //     id: string;
+      //     name: string;
+      //     birth_death: string | null;
+      //     school_tradition: string | null;
+      //     bio_summary: string | null;
+      //     key_ideas: string[] | null;
+      //     public_domain_works: string | null;
+      //     status: 'historical' | 'contemporary' | 'obscure';
+      //     wikipedia_slug: string | null;
+      //     sep_link: string | null;
+      //     era: string | null;
+      //     created_at: string;
+      //   };
+      //   Insert: {
+      //     id?: string;
+      //     name: string;
+      //     birth_death?: string | null;
+      //     school_tradition?: string | null;
+      //     bio_summary?: string | null;
+      //     key_ideas?: string[] | null;
+      //     public_domain_works?: string | null;
+      //     status?: 'historical' | 'contemporary' | 'obscure';
+      //     wikipedia_slug?: string | null;
+      //     sep_link?: string | null;
+      //     era?: string | null;
+      //     created_at?: string;
+      //   };
+      //   Update: {
+      //     id?: string;
+      //     name?: string;
+      //     birth_death?: string | null;
+      //     school_tradition?: string | null;
+      //     bio_summary?: string | null;
+      //     key_ideas?: string[] | null;
+      //     public_domain_works?: string | null;
+      //     status?: 'historical' | 'contemporary' | 'obscure';
+      //     wikipedia_slug?: string | null;
+      //     sep_link?: string | null;
+      //     era?: string | null;
+      //     created_at?: string;
+      //   };
+      //   Relationships: [];
+      // };
 
       // Future tables (examples)
       // conversations: { ... }
